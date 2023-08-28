@@ -18,8 +18,9 @@ export const UserContext = createContext();
 
 function App() {
 
-  const BASE_USER_URL = `http://localhost:5000/api/user`;
-  const BASE_STORY_URL = `http://localhost:5000/api/story`;
+  const BASE_USER_URL = `https://fullstack-project-e6vo.onrender.com/api/user`;
+  const BASE_STORY_URL = `https://fullstack-project-e6vo.onrender.com/api/story`;
+  
 
   const [token, setToken] = useState(
     localStorage.getItem("user_token_swiptory")
