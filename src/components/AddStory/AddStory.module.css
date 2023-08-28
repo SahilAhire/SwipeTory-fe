@@ -1,0 +1,227 @@
+.addStoryContainer {
+    padding: 3rem;
+    background-color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 20px;
+    position: relative;
+}
+
+.addStoryTitle {
+    display: none;
+}
+
+.slideWrapper {
+    display: flex;
+}
+
+.slide {
+    cursor: pointer;
+    border-radius: 15px;
+    padding: .75rem;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.slideActive {
+    border: 2px solid #73ABFF;
+}
+
+.addStoryForm {
+    margin: 1.75rem 0 0;
+    padding: 0 .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: relative;
+}
+
+.heading,
+.description,
+.image,
+.category {
+    font-size: 1.05rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.heading input,
+.description input,
+.image input,
+.category select {
+    color: #474141;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: .45rem .65rem;
+    width: 53%;
+}
+
+.authSubmitBtn {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    background-color: #FF7373;
+}
+
+.authSubmitBtnDisable {
+    background-color: #9bbdf0;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingSpinner {
+    width: 18px;
+    height: 18px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #383636;
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+.prevnext {
+    padding: 0 1rem;
+    display: flex;
+    gap: 2.5%;
+    position: absolute;
+    bottom: 11%;
+}
+
+.prevnext button {
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 1.5rem;
+    text-align: center;
+}
+
+.previousBtn {
+    background-color: #7EFF73;
+}
+
+.nextBtn {
+    background-color: #73ABFF;
+}
+
+.nextBtnDisabled {
+    background-color: rgb(163, 162, 162);
+}
+
+.closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    display: flex;
+    gap: .45rem;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.closebtn input {
+    cursor: pointer;
+    background: #FFF;
+    color: red;
+    border-radius: 50%;
+    border: 3px solid red;
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: .15rem .3rem;
+}
+
+.noteTitle {
+    color: #474141;
+    font-size: .55rem;
+}
+
+.errorTag {
+    margin: auto;
+    font-size: .95rem;
+    font-weight: 700;
+    color: #FF0E0E;
+}
+
+@media screen and (max-width:750px) {
+    .addStoryContainer {
+        padding: 1rem 1.35rem 1.75rem;
+    }
+
+    .addStoryTitle {
+        display: block;
+        text-align: center;
+        margin: 1rem 0 1.5rem;
+    }
+
+    .slideWrapper {
+        width: 37%;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: .25rem;
+    }
+
+    .slide {
+        padding: .85rem .5rem;
+    }
+
+    .addStoryContainerInner {
+        display: flex;
+        gap: 1.25rem;
+    }
+
+    .addStoryForm {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .heading,
+    .description,
+    .image,
+    .category {
+        flex-direction: column;
+        gap: .35rem;
+        align-items: flex-start;
+    }
+
+    .heading input,
+    .description input,
+    .image input,
+    .category select {
+        width: 100%;
+        padding: .55rem .65rem;
+    }
+
+    .authSubmitBtn {
+        margin: auto;
+    }
+
+    .closebtn {
+        right: 1rem;
+    }
+
+    .noteTitle {
+        font-size: .5rem;
+    }
+
+    .prevnext {
+        display: none;
+    }
+}

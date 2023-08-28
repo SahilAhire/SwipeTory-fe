@@ -1,0 +1,58 @@
+.filter {
+    display: flex;
+    gap: 1.1rem;
+    overflow: auto;
+    white-space: nowrap;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.filter::-webkit-scrollbar {
+    display: none;
+}
+
+.filterTag {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.filterTag img {
+    max-width: 165px;    
+    border-radius: 30px;
+}
+
+.filterTag h2 {
+    color: #fff;
+    font-size: 700;
+    position: absolute;
+}
+
+.filterTagActive {
+    border: 5px solid #00ACD2;
+}
+
+@media screen and (max-width:750px) {
+    .filter {
+        overflow: auto;
+        white-space: nowrap;
+        flex-direction: row;
+        gap: 2.25%;
+    }
+
+    .filterTag {
+        text-align: center;
+    }
+
+    .filterTag img {
+        max-width: 65px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .filterTag h2 {
+        font-size: .95rem;
+    }
+
+}
