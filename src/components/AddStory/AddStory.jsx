@@ -169,7 +169,8 @@ function AddStory() {
                             <option value="car">Car</option>
                             <option value="flowers">Flower</option>
                             <option value="anime">Anime</option>
-                            <option value="catroon">Cartoon</option>
+                            <option value="cartoon">Cartoon</option>
+                            <option value="movie">Movie</option>
                         </select>
                     </div>
 
