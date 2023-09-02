@@ -163,6 +163,7 @@ function AddStory() {
 
                         <select name="category" onChange={handleAddStoryInput}>
                             <option>Select Category</option>
+                            <option value="Sports" >Sports</option>
                             <option value="food" >Food</option>
                             <option value="music">Music</option>
                             <option value="nature">Nature</option>
